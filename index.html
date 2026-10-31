@@ -8,12 +8,17 @@
 <meta property="og:title" content="Diana Fonseca Fitness Coach | 1:1 Online Coaching">
 <meta property="og:description" content="Personal training programmes built around your goals, your equipment and your week. Book your free consult call.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315171A'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23D4F05A'%3EDF%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#024B34">
+<meta property="og:image" content="https://dianafonseca-fitness.netlify.app/images/og-image.jpg">
+<meta property="og:url" content="https://dianafonseca-fitness.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#15171A;--ground:#F4F2EC;--sand:#EAE6DC;--muted:#3F444A;--muted2:#4A4F55;--green:#0E4D3F;--accent:#D4F05A;--on-dark:#C9CCCF}
+:root{--ink:#15171A;--ground:#F4F2EC;--sand:#EAE6DC;--muted:#3F444A;--muted2:#4A4F55;--green:#024B34;--brand:#024B34;--forest:#03301F;--accent:#D4F05A;--on-dark:#C9CCCF}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -25,13 +30,13 @@ a{color:var(--ink)}a:hover{color:var(--green)}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
 .dark .kicker{color:var(--accent)}
 .lead{margin:0;font-size:18px;color:var(--muted)}
-.dark{background:var(--ink);color:var(--ground)}
+.dark{background:var(--forest);color:var(--ground)}
 .dark .lead{color:var(--on-dark)}
 section{padding:96px 0}
 .stack{display:flex;flex-direction:column;gap:14px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:17px;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
-.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{color:#fff;background:#000}
-.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ink{background:var(--brand);color:#fff}.btn-ink:hover{color:#fff;background:#013826}
+.btn-line{border-color:var(--brand);color:var(--brand);background:transparent}
 .btn-accent{background:var(--accent);color:var(--ink)}.btn-accent:hover{color:var(--ink);filter:brightness(.95)}
 .check{flex-shrink:0}
 ul.plain{list-style:none;margin:0;padding:0}
@@ -39,7 +44,9 @@ ul.plain{list-style:none;margin:0;padding:0}
 /* header */
 header{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid #15171A1F}
 .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:14px;padding-bottom:14px}
-.logo{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;line-height:1}
+.logo{text-decoration:none;color:var(--brand);display:flex;align-items:center;gap:12px;line-height:1}
+.logo img{height:44px;width:auto;display:block}
+.logo-text{display:flex;flex-direction:column;gap:4px}
 .logo b{font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:800;font-size:22px;letter-spacing:-.01em}
 .logo small{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--muted2)}
 .dark .logo{color:var(--ground)}
@@ -47,9 +54,9 @@ header{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1
 nav.main{display:flex;flex-wrap:wrap;gap:4px 22px;font-weight:600;font-size:15px}
 nav.main a{text-decoration:none;padding:10px 0}
 .actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.langs{display:flex;border:1.5px solid var(--ink);border-radius:999px;padding:3px}
+.langs{display:flex;border:1.5px solid var(--brand);border-radius:999px;padding:3px}
 .lang{border:0;background:transparent;font:700 13px/1 'Manrope',system-ui,sans-serif;padding:0 14px;height:38px;border-radius:999px;cursor:pointer;color:var(--ink);letter-spacing:.04em}
-.lang[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.lang[aria-pressed="true"]{background:var(--brand);color:var(--ground)}
 .actions .btn{min-height:46px;padding:0 20px;font-size:15px}
 @media (max-width:860px){header{position:static}nav.main{order:3;width:100%;gap:0 18px}html{scroll-padding-top:0}}
 
@@ -64,8 +71,9 @@ nav.main a{text-decoration:none;padding:10px 0}
 .note{margin:0;font-size:14px;color:var(--muted2);font-weight:600}
 .points{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:8px}
 .points li{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
-.photo{aspect-ratio:4/5;max-height:640px;width:100%;background:var(--ink);border-radius:28px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;color:var(--ground);background-size:cover;background-position:center}
-.photo-top{display:flex;justify-content:flex-end;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:15px;letter-spacing:.16em;color:var(--accent)}
+.photo{aspect-ratio:4/5;max-height:640px;width:100%;background:var(--forest);border-radius:28px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;color:var(--ground);background-size:cover;background-position:center}
+.photo-top{display:flex;justify-content:flex-end}
+.photo-top img{height:40px;width:auto;opacity:.9}
 .photo-bottom{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
 .ph{border:1.5px dashed #F4F2EC80;border-radius:12px;padding:10px 14px;font-size:14px;font-weight:600}
 .badge{background:var(--accent);color:var(--ink);border-radius:14px;padding:12px 16px;font-weight:700;font-size:15px}
@@ -74,7 +82,7 @@ nav.main a{text-decoration:none;padding:10px 0}
 .white{background:#fff}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
 .card{background:var(--ground);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px}
-.num{width:44px;height:44px;border-radius:999px;background:var(--ink);color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font-family:'Archivo',sans-serif;font-weight:800;font-size:15px}
+.num{width:44px;height:44px;border-radius:999px;background:var(--brand);color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font-family:'Archivo',sans-serif;font-weight:800;font-size:15px}
 .card h3{margin:0;font-size:20px;font-weight:700;line-height:1.25}
 .card p{margin:0;color:var(--muted)}
 
@@ -89,7 +97,7 @@ nav.main a{text-decoration:none;padding:10px 0}
 .center{text-align:center;align-items:center;margin:0 auto}
 .plans{width:100%;max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px}
 .plan{background:#fff;border:1.5px solid #15171A1F;border-radius:26px;padding:36px;display:flex;flex-direction:column;gap:22px}
-.plan.featured{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.plan.featured{background:var(--forest);color:var(--ground);border-color:var(--forest)}
 .plan h3{font-size:26px}
 .plan.featured h3{color:var(--accent)}
 .price{margin:0;display:flex;align-items:baseline;gap:6px}
@@ -134,7 +142,7 @@ legend{font-size:14px;font-weight:600;padding:0;margin-bottom:8px}
 .chip{position:relative;display:inline-flex}
 .chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
 .chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #15171A40;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;background:#fff;color:var(--ink)}
-.chip input:checked+span{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip input:checked+span{background:var(--brand);color:var(--ground);border-color:var(--brand)}
 .chip input:focus-visible+span{outline:3px solid var(--green);outline-offset:2px}
 .consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--muted)}
 .consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ink);flex-shrink:0}
@@ -143,7 +151,7 @@ legend{font-size:14px;font-weight:600;padding:0;margin-bottom:8px}
 .thanks{display:flex;flex-direction:column;gap:16px;align-items:flex-start;padding:24px 0}
 .thanks h3{font-size:30px;line-height:1.1}
 .thanks p{margin:0;font-size:17px;color:var(--muted)}
-.okmark{width:56px;height:56px;border-radius:999px;background:var(--ink);display:inline-flex;align-items:center;justify-content:center}
+.okmark{width:56px;height:56px;border-radius:999px;background:var(--brand);display:inline-flex;align-items:center;justify-content:center}
 [hidden]{display:none!important}
 
 /* faq */
@@ -161,6 +169,7 @@ details p{margin:0 0 22px;font-size:17px;color:var(--muted);max-width:700px}
 
 /* footer */
 footer{padding:48px 0}
+.foot-logo{height:110px;width:auto;display:block}
 .foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:15px;font-weight:600}
 footer nav a{color:var(--ground);padding:10px 0}
@@ -172,7 +181,7 @@ footer nav a:hover{color:var(--accent)}
 
 <header>
 <div class="wrap bar">
-<a class="logo" href="#top" aria-label="Diana Fonseca Fitness Coach, home"><b>Diana Fonseca</b><small>FITNESS COACH</small></a>
+<a class="logo" href="#top" aria-label="Diana Fonseca Fitness Coach, home"><img src="/images/logo-mark.png" alt="" width="58" height="44"><span class="logo-text"><b>Diana Fonseca</b><small>FITNESS COACH</small></span></a>
 <nav class="main" aria-label="Main">
 <a href="#coaching" data-i18n="nav_coaching">Coaching</a>
 <a href="#how" data-i18n="nav_how">How it works</a>
@@ -204,14 +213,14 @@ footer nav a:hover{color:var(--accent)}
 </div>
 <p class="note" data-i18n="hero_note">Free 20-minute video call · No commitment</p>
 <ul class="plain points">
-<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.0">A plan built for your goal</span></li>
-<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.1">Weekly check-ins</span></li>
-<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.2">Train anywhere</span></li>
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.0">A plan built for your goal</span></li>
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.1">Weekly check-ins</span></li>
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.2">Train anywhere</span></li>
 </ul>
 </div>
 <!-- To add a photo: put it in /images and add style="background-image:url('/images/hero.jpg')" to this div, then delete the .ph span -->
 <div class="photo" role="img" aria-label="Diana Fonseca, online fitness coach">
-<div class="photo-top">DF</div>
+<div class="photo-top"><img src="/images/logo-mark-light.png" alt="" width="53" height="40"></div>
 <div class="photo-bottom">
 <span class="ph" data-i18n="photo_hero">[Photo: Diana training]</span>
 <span class="badge" data-i18n="hero_badge">Online coaching in English &amp; Portuguese</span>
@@ -264,10 +273,10 @@ footer nav a:hover{color:var(--accent)}
 <h3 class="display">Essential</h3>
 <p class="price"><b>[PRICE]</b><span data-i18n="per_month">/ month</span></p>
 <ul class="plain feats">
-<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.0">Personalised training plan</span></li>
-<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.1">Weekly check-in</span></li>
-<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.2">Technique feedback by video</span></li>
-<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.3">Message support on weekdays</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.0">Personalised training plan</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.1">Weekly check-in</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.2">Technique feedback by video</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#024B34" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.3">Message support on weekdays</span></li>
 </ul>
 <a class="btn btn-line" href="#book" data-plan="Essential" data-i18n="plan_cta">Start with a free call</a>
 </div>
@@ -399,7 +408,7 @@ footer nav a:hover{color:var(--accent)}
 
 <footer class="dark">
 <div class="wrap foot">
-<div class="logo"><b>Diana Fonseca</b><small>FITNESS COACH</small></div>
+<img class="foot-logo" src="/images/logo-full-light.png" alt="Diana Fonseca" width="125" height="110">
 <nav aria-label="Footer">
 <a href="https://instagram.com/">Instagram [@handle]</a>
 <a href="mailto:hello@example.com">[email@yourdomain.com]</a>
