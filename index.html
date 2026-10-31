@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diana Fonseca Fitness Coach | 1:1 Online Coaching</title>
+<meta name="description" content="1:1 online personal training with Diana Fonseca. A plan built for your goal, weekly check-ins and technique feedback. Book your free consult call.">
+<meta property="og:title" content="Diana Fonseca Fitness Coach | 1:1 Online Coaching">
+<meta property="og:description" content="Personal training programmes built around your goals, your equipment and your week. Book your free consult call.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315171A'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23D4F05A'%3EDF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15171A;--ground:#F4F2EC;--sand:#EAE6DC;--muted:#3F444A;--muted2:#4A4F55;--green:#0E4D3F;--accent:#D4F05A;--on-dark:#C9CCCF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}a:hover{color:var(--green)}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.display{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:800;letter-spacing:-.025em;margin:0}
+.h2{font-size:clamp(34px,4vw,52px);line-height:1.02}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.dark .kicker{color:var(--accent)}
+.lead{margin:0;font-size:18px;color:var(--muted)}
+.dark{background:var(--ink);color:var(--ground)}
+.dark .lead{color:var(--on-dark)}
+section{padding:96px 0}
+.stack{display:flex;flex-direction:column;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:17px;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{color:#fff;background:#000}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-accent{background:var(--accent);color:var(--ink)}.btn-accent:hover{color:var(--ink);filter:brightness(.95)}
+.check{flex-shrink:0}
+ul.plain{list-style:none;margin:0;padding:0}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid #15171A1F}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:14px;padding-bottom:14px}
+.logo{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;line-height:1}
+.logo b{font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:800;font-size:22px;letter-spacing:-.01em}
+.logo small{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--muted2)}
+.dark .logo{color:var(--ground)}
+.dark .logo small{color:var(--on-dark)}
+nav.main{display:flex;flex-wrap:wrap;gap:4px 22px;font-weight:600;font-size:15px}
+nav.main a{text-decoration:none;padding:10px 0}
+.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.langs{display:flex;border:1.5px solid var(--ink);border-radius:999px;padding:3px}
+.lang{border:0;background:transparent;font:700 13px/1 'Manrope',system-ui,sans-serif;padding:0 14px;height:38px;border-radius:999px;cursor:pointer;color:var(--ink);letter-spacing:.04em}
+.lang[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.actions .btn{min-height:46px;padding:0 20px;font-size:15px}
+@media (max-width:860px){header{position:static}nav.main{order:3;width:100%;gap:0 18px}html{scroll-padding-top:0}}
+
+/* hero */
+.hero{padding:72px 0 96px}
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.pill{background:var(--accent);color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.hero h1{font-size:clamp(44px,6vw,82px);line-height:.98;letter-spacing:-.03em}
+.hero-sub{margin:0;font-size:19px;color:var(--muted);max-width:540px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.note{margin:0;font-size:14px;color:var(--muted2);font-weight:600}
+.points{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:8px}
+.points li{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.photo{aspect-ratio:4/5;max-height:640px;width:100%;background:var(--ink);border-radius:28px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;color:var(--ground);background-size:cover;background-position:center}
+.photo-top{display:flex;justify-content:flex-end;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:15px;letter-spacing:.16em;color:var(--accent)}
+.photo-bottom{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.ph{border:1.5px dashed #F4F2EC80;border-radius:12px;padding:10px 14px;font-size:14px;font-weight:600}
+.badge{background:var(--accent);color:var(--ink);border-radius:14px;padding:12px 16px;font-weight:700;font-size:15px}
+
+/* includes */
+.white{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--ground);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.num{width:44px;height:44px;border-radius:999px;background:var(--ink);color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font-family:'Archivo',sans-serif;font-weight:800;font-size:15px}
+.card h3{margin:0;font-size:20px;font-weight:700;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px 28px}
+.steps li{display:flex;flex-direction:column;gap:12px;border-top:1.5px solid #F4F2EC40;padding-top:22px}
+.steps .big{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:56px;line-height:1;color:var(--accent)}
+.steps h3{margin:0;font-size:20px;font-weight:700}
+.steps p{margin:0;color:var(--on-dark)}
+
+/* plans */
+.center{text-align:center;align-items:center;margin:0 auto}
+.plans{width:100%;max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px}
+.plan{background:#fff;border:1.5px solid #15171A1F;border-radius:26px;padding:36px;display:flex;flex-direction:column;gap:22px}
+.plan.featured{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.plan h3{font-size:26px}
+.plan.featured h3{color:var(--accent)}
+.price{margin:0;display:flex;align-items:baseline;gap:6px}
+.price b{font-family:'Archivo',sans-serif;font-weight:800;font-size:44px;line-height:1}
+.price span{color:var(--muted2);font-weight:600}
+.plan.featured .price span{color:var(--on-dark)}
+.feats{display:flex;flex-direction:column;gap:12px;flex-grow:1}
+.feats li{display:flex;gap:10px;align-items:flex-start}
+.feats svg{margin-top:2px}
+.plan .btn{min-height:52px;font-size:16px}
+
+/* about */
+.sand{background:var(--sand)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:56px;align-items:center}
+.portrait{aspect-ratio:1/1;max-height:520px;width:100%;background:#D6D0C2;border-radius:28px;display:flex;align-items:center;justify-content:center;padding:24px;background-size:cover;background-position:center}
+.portrait .ph{border-color:#15171A80;color:var(--ink)}
+.creds{display:flex;flex-wrap:wrap;gap:10px}
+.creds li{background:#fff;border-radius:999px;padding:10px 16px;font-weight:600;font-size:15px}
+.label-caps{margin:8px 0 0;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.quotes figure{margin:0;background:#fff;border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:20px;justify-content:space-between}
+.quotes blockquote{margin:0;font-size:18px;font-weight:500;line-height:1.5}
+.quotes figcaption{display:flex;flex-direction:column;gap:2px}
+.quotes figcaption span{font-size:14px;color:var(--muted2)}
+
+/* booking */
+.book-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:56px;align-items:start}
+.book-points{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.book-points li{display:flex;align-items:center;gap:12px;font-weight:600;font-size:17px}
+.tick{width:32px;height:32px;border-radius:999px;background:var(--accent);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.form-card{background:var(--ground);color:var(--ink);border-radius:26px;padding:clamp(22px,4vw,36px)}
+form{display:flex;flex-direction:column;gap:20px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.fld input,.fld textarea{font:500 16px/1.4 'Manrope',system-ui,sans-serif;padding:12px 14px;border:1.5px solid #15171A40;border-radius:12px;background:#fff;color:var(--ink);min-height:48px;width:100%}
+.fld input:focus,.fld textarea:focus{outline:3px solid var(--ink);outline-offset:1px;border-color:var(--ink)}
+fieldset{border:0;padding:0;margin:0;min-width:0}
+legend{font-size:14px;font-weight:600;padding:0;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-flex}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #15171A40;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;background:#fff;color:var(--ink)}
+.chip input:checked+span{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip input:focus-visible+span{outline:3px solid var(--green);outline-offset:2px}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ink);flex-shrink:0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{margin:0;color:#A1260D;font-weight:600;font-size:14px}
+.thanks{display:flex;flex-direction:column;gap:16px;align-items:flex-start;padding:24px 0}
+.thanks h3{font-size:30px;line-height:1.1}
+.thanks p{margin:0;font-size:17px;color:var(--muted)}
+.okmark{width:56px;height:56px;border-radius:999px;background:var(--ink);display:inline-flex;align-items:center;justify-content:center}
+[hidden]{display:none!important}
+
+/* faq */
+.narrow{max-width:860px}
+.faqs{border-top:1px solid #15171A26}
+details{border-bottom:1px solid #15171A26}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 0;font-weight:700;font-size:18px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font:700 26px/1 'Archivo',sans-serif}
+details[open] summary::after{content:'\2013'}
+details p{margin:0 0 22px;font-size:17px;color:var(--muted);max-width:700px}
+.cta-band{background:var(--accent);border-radius:22px;padding:28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:16px}
+.cta-band p{margin:0;font-size:24px;line-height:1.15}
+.cta-band .btn{min-height:52px;font-size:16px}
+
+/* footer */
+footer{padding:48px 0}
+.foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:15px;font-weight:600}
+footer nav a{color:var(--ground);padding:10px 0}
+footer nav a:hover{color:var(--accent)}
+.copy{margin:0;font-size:14px;color:var(--on-dark);width:100%}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top" aria-label="Diana Fonseca Fitness Coach, home"><b>Diana Fonseca</b><small>FITNESS COACH</small></a>
+<nav class="main" aria-label="Main">
+<a href="#coaching" data-i18n="nav_coaching">Coaching</a>
+<a href="#how" data-i18n="nav_how">How it works</a>
+<a href="#plans" data-i18n="nav_plans">Plans</a>
+<a href="#about" data-i18n="nav_about">About</a>
+<a href="#faq" data-i18n="nav_faq">FAQ</a>
+</nav>
+<div class="actions">
+<div class="langs" role="group" aria-label="Language" data-i18n-attr="aria-label:lang_label">
+<button type="button" class="lang" data-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang" data-lang="pt" aria-pressed="false">PT</button>
+</div>
+<a class="btn btn-ink" href="#book" data-i18n="nav_cta">Book a free call</a>
+</div>
+</div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-title">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<span class="pill" data-i18n="hero_kicker">1:1 online coaching</span>
+<h1 id="hero-title" class="display" data-i18n="hero_title">Stronger, fitter and finally consistent.</h1>
+<p class="hero-sub" data-i18n="hero_sub">Personal training programmes built around your goals, your equipment and your week, with Diana coaching you every step of the way, wherever you are.</p>
+<div class="row">
+<a class="btn btn-ink" href="#book" data-i18n="hero_cta">Book your free consult call</a>
+<a class="btn btn-line" href="#how" data-i18n="hero_cta2">See how it works</a>
+</div>
+<p class="note" data-i18n="hero_note">Free 20-minute video call · No commitment</p>
+<ul class="plain points">
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.0">A plan built for your goal</span></li>
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.1">Weekly check-ins</span></li>
+<li><svg class="check" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hero_points.2">Train anywhere</span></li>
+</ul>
+</div>
+<!-- To add a photo: put it in /images and add style="background-image:url('/images/hero.jpg')" to this div, then delete the .ph span -->
+<div class="photo" role="img" aria-label="Diana Fonseca, online fitness coach">
+<div class="photo-top">DF</div>
+<div class="photo-bottom">
+<span class="ph" data-i18n="photo_hero">[Photo: Diana training]</span>
+<span class="badge" data-i18n="hero_badge">Online coaching in English &amp; Portuguese</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="coaching" class="white" aria-labelledby="inc-title">
+<div class="wrap" style="display:flex;flex-direction:column;gap:48px">
+<div class="stack" style="max-width:680px">
+<span class="kicker" data-i18n="inc_kicker">1:1 coaching</span>
+<h2 id="inc-title" class="display h2" data-i18n="inc_title">Everything you need to make real progress</h2>
+<p class="lead" data-i18n="inc_sub">A dedicated coach, a plan that adapts to you, and real support between sessions.</p>
+</div>
+<div class="cards">
+<div class="card"><span class="num">01</span><h3 data-i18n="includes.0.title">Your personal plan</h3><p data-i18n="includes.0.text">A training programme written for your goal, level and equipment, at home or in the gym.</p></div>
+<div class="card"><span class="num">02</span><h3 data-i18n="includes.1.title">Weekly check-ins</h3><p data-i18n="includes.1.text">Every week Diana reviews your progress and adjusts the plan so you keep moving forward.</p></div>
+<div class="card"><span class="num">03</span><h3 data-i18n="includes.2.title">Technique feedback</h3><p data-i18n="includes.2.text">Send videos of your exercises and get corrections so you train safely and effectively.</p></div>
+<div class="card"><span class="num">04</span><h3 data-i18n="includes.3.title">Direct support</h3><p data-i18n="includes.3.text">Questions between sessions? Message Diana and get a real answer from your coach.</p></div>
+</div>
+</div>
+</section>
+
+<section id="how" class="dark" aria-labelledby="how-title">
+<div class="wrap" style="display:flex;flex-direction:column;gap:56px">
+<div class="stack">
+<span class="kicker" data-i18n="how_kicker">The process</span>
+<h2 id="how-title" class="display h2" data-i18n="how_title">How it works</h2>
+</div>
+<ol class="steps">
+<li><span class="big">1</span><h3 data-i18n="steps.0.title">Book a free call</h3><p data-i18n="steps.0.text">Tell Diana about your goals, training history and schedule in a short video call.</p></li>
+<li><span class="big">2</span><h3 data-i18n="steps.1.title">Get your plan</h3><p data-i18n="steps.1.text">Within [X] days you receive a programme built specifically for you.</p></li>
+<li><span class="big">3</span><h3 data-i18n="steps.2.title">Train and check in</h3><p data-i18n="steps.2.text">Follow your sessions, log your progress and check in with Diana every week.</p></li>
+<li><span class="big">4</span><h3 data-i18n="steps.3.title">Progress, adjust, repeat</h3><p data-i18n="steps.3.text">Your plan evolves as you get stronger, so the results keep coming.</p></li>
+</ol>
+<div><a class="btn btn-accent" href="#book" data-i18n="hero_cta">Book your free consult call</a></div>
+</div>
+</section>
+
+<section id="plans" aria-labelledby="plans-title">
+<div class="wrap" style="display:flex;flex-direction:column;gap:48px">
+<div class="stack center" style="max-width:680px">
+<span class="kicker" data-i18n="plans_kicker">Plans</span>
+<h2 id="plans-title" class="display h2" data-i18n="plans_title">Choose your coaching</h2>
+<p class="lead" data-i18n="plans_sub">Every plan starts with a free consult call, so you only commit once you know it's the right fit.</p>
+</div>
+<div class="plans">
+<div class="plan">
+<h3 class="display">Essential</h3>
+<p class="price"><b>[PRICE]</b><span data-i18n="per_month">/ month</span></p>
+<ul class="plain feats">
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.0">Personalised training plan</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.1">Weekly check-in</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.2">Technique feedback by video</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D3F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan1.3">Message support on weekdays</span></li>
+</ul>
+<a class="btn btn-line" href="#book" data-plan="Essential" data-i18n="plan_cta">Start with a free call</a>
+</div>
+<div class="plan featured">
+<h3 class="display">Premium</h3>
+<p class="price"><b>[PRICE]</b><span data-i18n="per_month">/ month</span></p>
+<ul class="plain feats">
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F05A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan2.0">Everything in Essential</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F05A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan2.1">Monthly live video session</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F05A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan2.2">Priority message support</span></li>
+<li><svg class="check" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F05A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="plan2.3">Habit and lifestyle guidance</span></li>
+</ul>
+<a class="btn btn-accent" href="#book" data-plan="Premium" data-i18n="plan_cta">Start with a free call</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="sand" aria-labelledby="about-title">
+<div class="wrap split">
+<!-- To add a portrait: add style="background-image:url('/images/diana.jpg')" here and delete the .ph span -->
+<div class="portrait" role="img" aria-label="Portrait of Diana Fonseca"><span class="ph" data-i18n="photo_about">[Portrait of Diana]</span></div>
+<div class="stack" style="gap:20px">
+<span class="kicker" data-i18n="about_kicker">Meet your coach</span>
+<h2 id="about-title" class="display h2" data-i18n="about_title">Hi, I'm Diana.</h2>
+<p class="lead" data-i18n="about_body">[Short bio: your story, why you coach, and the kind of people you love working with.]</p>
+<h3 class="label-caps" data-i18n="creds_title">Qualifications</h3>
+<ul class="plain creds">
+<li data-i18n="creds.0">[Certification 1]</li>
+<li data-i18n="creds.1">[Certification 2]</li>
+<li data-i18n="creds.2">[Years coaching]</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="testi-title">
+<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+<div class="stack">
+<span class="kicker" data-i18n="testi_kicker">Results</span>
+<h2 id="testi-title" class="display h2" data-i18n="testi_title">What clients say</h2>
+</div>
+<div class="quotes">
+<figure><blockquote data-i18n="testi_quote">“[Client testimonial: what changed for them after coaching with Diana.]”</blockquote><figcaption><b data-i18n="testi_name">[Client name]</b><span data-i18n="testi_detail">[Goal · time coached]</span></figcaption></figure>
+<figure><blockquote data-i18n="testi_quote">“[Client testimonial: what changed for them after coaching with Diana.]”</blockquote><figcaption><b data-i18n="testi_name">[Client name]</b><span data-i18n="testi_detail">[Goal · time coached]</span></figcaption></figure>
+<figure><blockquote data-i18n="testi_quote">“[Client testimonial: what changed for them after coaching with Diana.]”</blockquote><figcaption><b data-i18n="testi_name">[Client name]</b><span data-i18n="testi_detail">[Goal · time coached]</span></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section id="book" class="dark" aria-labelledby="book-title">
+<div class="wrap book-grid">
+<div class="stack" style="gap:20px">
+<span class="kicker" data-i18n="book_kicker">Free consult call</span>
+<h2 id="book-title" class="display" style="font-size:clamp(36px,4.4vw,60px);line-height:1" data-i18n="book_title">Let's talk about your goals</h2>
+<p class="lead" data-i18n="book_sub">Fill in the form and Diana will get back to you within [24 hours] to schedule your free call.</p>
+<ul class="plain book-points">
+<li><span class="tick"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15171A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="book_points.0">Free, with no commitment</span></li>
+<li><span class="tick"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15171A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="book_points.1">20-minute video call</span></li>
+<li><span class="tick"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15171A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="book_points.2">In English or Portuguese</span></li>
+</ul>
+</div>
+<div class="form-card">
+<div class="thanks" id="thanks" role="status" hidden>
+<span class="okmark"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D4F05A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+<h3 class="display" data-i18n="thanks_title">Thank you! Your request is in.</h3>
+<p data-i18n="thanks_body">Diana will be in touch shortly to schedule your free consult call. Keep an eye on your email and WhatsApp.</p>
+<button type="button" class="btn btn-line" id="again" style="min-height:48px;font-size:15px" data-i18n="thanks_again">Send another request</button>
+</div>
+<!-- Values of the choice fields stay in English so every lead reads the same in the Netlify dashboard -->
+<form id="lead" name="consult-request" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="consult-request">
+<input type="hidden" name="subject" value="New consult call request: Diana Fonseca Fitness Coach">
+<input type="hidden" name="language" id="f-lang" value="en">
+<input type="hidden" name="plan_interest" id="f-plan" value="">
+<p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<label class="fld"><span data-i18n="f_name">Full name</span><input name="name" type="text" required autocomplete="name"></label>
+<div class="two">
+<label class="fld"><span data-i18n="f_email">Email</span><input name="email" type="email" required autocomplete="email"></label>
+<label class="fld"><span data-i18n="f_phone">WhatsApp / phone (optional)</span><input name="phone" type="tel" autocomplete="tel"></label>
+</div>
+<fieldset><legend data-i18n="f_goal">Main goal</legend><div class="chips">
+<label class="chip"><input type="radio" name="goal" value="Lose fat" required><span data-i18n="goals.0">Lose fat</span></label>
+<label class="chip"><input type="radio" name="goal" value="Build strength"><span data-i18n="goals.1">Build strength</span></label>
+<label class="chip"><input type="radio" name="goal" value="Tone up"><span data-i18n="goals.2">Tone up</span></label>
+<label class="chip"><input type="radio" name="goal" value="Get back into training"><span data-i18n="goals.3">Get back into training</span></label>
+<label class="chip"><input type="radio" name="goal" value="Other"><span data-i18n="goals.4">Other</span></label>
+</div></fieldset>
+<fieldset><legend data-i18n="f_level">Training experience</legend><div class="chips">
+<label class="chip"><input type="radio" name="level" value="Beginner" required><span data-i18n="levels.0">Beginner</span></label>
+<label class="chip"><input type="radio" name="level" value="Some experience"><span data-i18n="levels.1">Some experience</span></label>
+<label class="chip"><input type="radio" name="level" value="Advanced"><span data-i18n="levels.2">Advanced</span></label>
+</div></fieldset>
+<fieldset><legend data-i18n="f_time">Best time for a call</legend><div class="chips">
+<label class="chip"><input type="checkbox" name="best_time" value="Morning"><span data-i18n="times.0">Morning</span></label>
+<label class="chip"><input type="checkbox" name="best_time" value="Afternoon"><span data-i18n="times.1">Afternoon</span></label>
+<label class="chip"><input type="checkbox" name="best_time" value="Evening"><span data-i18n="times.2">Evening</span></label>
+</div></fieldset>
+<label class="fld"><span data-i18n="f_msg">Anything Diana should know? (optional)</span><textarea name="message" rows="3"></textarea></label>
+<label class="consent"><input type="checkbox" name="consent" value="yes" required><span data-i18n="f_consent">I agree to be contacted about coaching and accept the [privacy policy].</span></label>
+<p class="err" id="err" role="alert" hidden data-i18n="f_error">Something went wrong. Please try again, or message Diana directly.</p>
+<button type="submit" class="btn btn-ink" style="min-height:58px" data-i18n="f_submit">Request my free call</button>
+</form>
+</div>
+</div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+<div class="wrap narrow" style="display:flex;flex-direction:column;gap:28px">
+<div class="stack">
+<span class="kicker">FAQ</span>
+<h2 id="faq-title" class="display h2" data-i18n="faq_title">Common questions</h2>
+</div>
+<div class="faqs">
+<details><summary data-i18n="faqs.0.q">Do I need a gym?</summary><p data-i18n="faqs.0.a">No. Your plan is built around the equipment you have: a full gym, a few dumbbells or just your bodyweight.</p></details>
+<details><summary data-i18n="faqs.1.q">I'm a complete beginner. Is this for me?</summary><p data-i18n="faqs.1.a">Yes. Your programme starts where you are, with clear instructions and video feedback so you learn the right technique.</p></details>
+<details><summary data-i18n="faqs.2.q">How does online coaching work?</summary><p data-i18n="faqs.2.a">You train on your own schedule following your plan, then check in weekly so Diana can review your progress and adjust.</p></details>
+<details><summary data-i18n="faqs.3.q">Is the consult call really free?</summary><p data-i18n="faqs.3.a">Yes. It's a no-pressure conversation to see whether coaching is the right fit for you.</p></details>
+<details><summary data-i18n="faqs.4.q">Does Diana coach in Portuguese?</summary><p data-i18n="faqs.4.a">Yes. Diana coaches clients in both English and Portuguese.</p></details>
+</div>
+<div class="cta-band">
+<p class="display" data-i18n="faq_cta_text">Ready to start? The first call is on Diana.</p>
+<a class="btn btn-ink" href="#book" data-i18n="nav_cta">Book a free call</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="dark">
+<div class="wrap foot">
+<div class="logo"><b>Diana Fonseca</b><small>FITNESS COACH</small></div>
+<nav aria-label="Footer">
+<a href="https://instagram.com/">Instagram [@handle]</a>
+<a href="mailto:hello@example.com">[email@yourdomain.com]</a>
+<a href="#top" data-i18n="privacy">Privacy policy</a>
+</nav>
+<p class="copy">© <span id="year">2026</span> Diana Fonseca Fitness Coach. <span data-i18n="rights">All rights reserved.</span></p>
+</div>
+</footer>
+
+<script src="/i18n.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
