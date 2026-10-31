@@ -19,8 +19,8 @@ After a successful submit, the page fires a `generate_lead` (gtag) / `Lead` (Met
 
 ## Still to fill in
 
-Search for `[` in `i18n.js` and `index.html`: prices, bio, qualifications, testimonials, photos, Instagram handle, email, reply time, privacy policy.
+Search for `[` in `i18n.js` and `index.html`: prices, bio, qualifications, testimonials, Instagram handle, email, reply time, privacy policy.
 
-Photos: add them to an `images/` folder and set them as `background-image` on `.photo` and `.portrait` (see the comments in `index.html`).
+Photos: `images/diana-hero.*` (hero) and `images/diana-portrait.*` (About). Replace those files to change them.
 
 Link to the Portuguese version directly with `?lang=pt`.
